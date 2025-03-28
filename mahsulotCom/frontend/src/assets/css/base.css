@@ -1,0 +1,116 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap");
+
+
+* {
+    font-size: 14px !important;
+}
+
+  :root {
+  --color-primary : #2080F0;
+  --color-danger : #ff0060;
+  --color-success : #1b9c85;
+  --color-warning : #f7d060;
+  --color-white: #fff;
+  --color-black: black;
+  --color-aqua :  aqua ;
+  --color-red: crimson;
+  --color-orange: orange;
+  --color-info-dark : #7d8da1;
+  --color-dark: #363949;
+  --color-light : rgba(132, 139, 200, 0.18);
+  --color-dark-variant : #677483;
+  --color-background : #f6f6f6;
+  --color-border: grey;
+  --color-border-radius : 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2 : 1.2rem;
+  --padding-1 : 1.2rem;
+  --card-padding: 1.2rem;
+  --box-shadow : rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+
+  --color-table-green: green;
+  --color-table-crimson: crimson;
+  --color-login-black: black;
+  --color-login-white: white;
+
+
+  --color-card-success-opacity-3 : rgba(27, 156, 133, 0.3);
+  --color-card-success-opacity-1 : rgba(27, 156, 133, 0.1);
+
+  --color-card-primary-opacity-3 : rgba(108, 155, 207, 0.3);
+  --color-card-primary-opacity-1 : rgba(108, 155, 207, 0.2);
+
+  --color-card-warning-opacity-3 : rgba(247, 208, 96, 0.3);
+  --color-card-warning-opacity-1 : rgba(247, 208, 96, 0.1);
+
+  --color-card-danger-opacity-3 : rgba(255, 0, 96, 0.3);
+  --color-card-danger-opacity-5 : rgba(255, 0, 96, 0.5);
+  --color-card-danger-opacity-1 : rgba(255, 0, 96, 0.1);
+  --color-login-info-dark : #7d8da1;
+
+
+}
+
+.dark-mode-variables {
+  --color-background : #181a1e;
+  --color-white: #202528;
+  --color-dark: #edeffd;
+  --color-dark-variant: #a3bdcc;
+  --color-light: #E3E3EF;
+  --box-shadow : 0 0 0 0 #181a1e;
+--color-border: none;
+--color-table-green: #edeffd;
+--color-table-crimson: #edeffd;
+/* --box-shadow : rgba(255, 255, 255, 0.1) 0px 5px 10px 0px; */
+
+
+
+--color-card-success-opacity-3 : #181a1e;
+--color-card-success-opacity-1 :  #202528;
+--color-card-primary-opacity-3 : #181a1e;
+--color-card-primary-opacity-1 : #202528;
+
+--color-card-warning-opacity-3 : #181a1e;
+--color-card-warning-opacity-1 : #202528;
+
+--color-card-danger-opacity-3 : #181a1e;
+--color-card-danger-opacity-1 : #202528;
+
+
+--color-login-info-dark : #181a1e;
+  
+}
+
+
+
+ 
+body {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 14px;
+    background-color: var(--color-background);
+    transition: all 0.3s ease;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+

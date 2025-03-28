@@ -1,0 +1,370 @@
+
+
+.shop-header {
+    padding-top: 30px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+
+.shop-header .header-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.shop-header .header-buttons div {
+    margin-right: 10px;
+}
+
+
+
+
+.shop-create-modal {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.shop-create-modal .shop-create-input {
+    border: 1px solid var(--color-border);
+    background-color: var(--color-background);
+    margin-top: 10px;
+    display: flex;
+    justify-content: left;
+
+}
+
+.shop-create-modal .shop-create-input2 {
+    border: 1px solid var(--color-border);
+    margin-top: 10px;
+    display: flex;
+    justify-content: left;
+    justify-content: space-between;
+
+}
+
+
+.shop-create-modal .shop-create-input input {
+    border: none;
+    outline: none;
+    width: 99%;
+    height: 30px;
+    margin-left: 5px;
+    box-sizing: border-box;
+    font-size: 12px !important;
+    background-color: transparent;
+    color: var(--color-dark);
+
+}
+
+.shop-create-modal .shop-create-input2 input {
+    border: none;
+    outline: none;
+    width: 45%;
+    height: 30px;
+    padding-left: 3px;
+    box-sizing: border-box;
+    font-size: 12px !important;
+    background-color: var(--color-background);
+    color: var(--color-dark);
+
+}
+.shop-create-modal .shop-create-active {
+    margin-top: 10px;
+    display: flex;
+}
+.shop-create-modal .shop-create-active input[type ='checkbox'] {
+    border: none;
+    outline: none;
+    /* width: 20px; */
+    height: 16px;
+    margin-left: 5px;
+    box-sizing: border-box;
+    font-size: 12px !important;
+    background-color: transparent;
+
+}
+.shop-create-modal .shop-create-active label {
+    font-size: 12px !important;
+    color: var(--color-dark);
+    margin-left: 5px;
+}
+
+.shop-create-modal .shop-create-select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop-create-modal .shop-create-select i {
+    cursor: pointer;
+    color: var(--color-dark);
+}
+
+
+.shop-create-modal .shop-create-select select{
+    font-size: 12px !important;
+    width: 90%;
+    border: 1px solid var(--color-border);
+    outline: none;
+    height: 30px;
+    font-family: "Montserrat";
+    background-color: var(--color-background);
+    color: var(--color-dark);
+
+}
+
+
+.shop-create-modal .shop-create-select2 select{
+    font-size: 12px !important;
+    width: 100%;
+    border: 1px solid var(--color-border);
+    outline: none;
+    height: 30px;
+    font-family: "Montserrat";
+    background-color: var(--color-background);
+    color: var(--color-dark);
+    margin-top: 10px;
+    font-size: 10px !important;
+
+}
+
+.shop-create-modal .shop-create-description {
+    border: 1px solid var(--color-border);
+    margin-top: 10px;
+    background-color: var(--color-background);
+
+}
+
+
+.shop-create-modal .shop-create-description textarea {
+    border: none;
+    outline: none;
+    width: 99%;
+    margin-left: 5px;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    font-size: 12px !important;
+    background-color: transparent;
+    color: var(--color-dark);
+
+}
+
+
+.shop-create-modal .shop-create-images {
+    border: 1px solid grey;
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.shop-create-modal .shop-create-images .image-file {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    
+}
+.shop-create-modal .shop-create-images .image-file input {
+    width: 100%;
+    margin-left: 30px;
+}
+
+.shop-create-modal .shop-create-images .image-file div {
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+}
+.shop-create-modal .shop-create-images .image-file div i {
+    font-size: 30px !important;
+}
+
+
+
+.shop-detail-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-detail-info .shop-info .shop-image img {
+    width: 100px;
+    height: 100px;
+}
+
+.shop-detail-info .shop-info .shop-title {
+    font-weight: 700;
+}
+
+.shop-detail-info .shop-info p{
+    margin: 0;
+    color: var(--color-dark);
+}
+
+.shop-detail-info .shop-info .shop-decsription p {
+    opacity: 0.7;
+    color: var(--color-dark);
+}
+
+
+.shop-detail-info .shop-tools  {
+   display: flex
+}
+
+.popconfirm-text {
+    color: var(--color-dark);
+}
+
+.fa-pen-to-square {
+    color: var(--color-success);
+    background-color: var(--color-background);
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.fa-trash-can {
+    color: var(--color-danger);
+    background-color: var(--color-background);
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.popconfirm-buttons {
+    display: flex;
+    justify-content: end;
+}
+
+.popconfirm-buttons button {
+    border: none;
+    height: 25px;
+}
+
+.popconfirm-buttons .button-no{
+    border: 1px solid var(--color-border);
+    background-color: var(--color-background);
+    color: var(--color-dark);
+    margin-right: 10px;
+    /* width: 40px; */
+    height: 25px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+.popconfirm-buttons .button-yes {
+    border: none;
+    background-color: var(--color-danger);
+    color: white;
+    /* width: 40px; */
+    height: 25px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.popconfirm-body {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.popconfirm-body input {
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-background);
+    height: 25px;
+    font-size: 12px !important;
+    padding-left: 5px;
+    color: var(--color-dark);
+}
+
+.popconfirm-body textarea {
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-background);
+    font-size: 12px !important;
+    padding-left: 5px;
+    margin-top: 10px;
+    font-family: "Montserrat";
+    color: var(--color-dark);
+
+}
+
+
+.shop-create-images .image-files {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.shop-create-images .image-files input{
+    display: none;
+}
+
+.shop-create-images .image-files label {
+    width: 100px;
+    height: 100px;
+    /* border: 1px solid var(--color-border); */
+}
+
+.shop-create-images .image-files label i {
+    width: 99%;
+    height: 99%;
+    border: 1px solid var(--color-dark);
+    font-size: 40px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: var(--color-dark);
+    box-sizing: border-box;
+}
+
+.shop-create-images .image-list {
+    width: 97px;
+    height: 97px;
+    border: 1px solid var(--color-dark);
+    position: relative;
+    cursor: pointer;
+}
+
+.shop-create-images .image-list img {
+    width: 97px;
+    height: 97px;
+}
+
+.shop-create-images .image-list div {
+    position: absolute;
+    top: 0;
+    width: 97px;
+    height: 97px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.shop-create-images .image-list div i {
+    font-size: 50px !important;
+    color: white;
+}
+
+.shop-create-images .image-list:hover div {
+    display: flex;
+}

@@ -1,0 +1,291 @@
+
+@import './base.css';
+
+.modal {
+    max-width: 60%;
+    min-height: 400px;
+    background-color: var(--color-white);
+    padding: 10px;
+    position: relative;
+    top: 20px;
+    bottom: 20px;
+    left: 100px;
+}
+
+.modal .room-info {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-weight: 700;
+    color: var(--color-dark);
+}
+
+.modal .student {
+    display: flex;
+}
+
+.modal .student-image {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.modal .student-image label img {
+    width: 150px;
+    cursor: pointer;
+}
+
+.modal .student-image img {
+    width: 150px;
+    height  : 150px;
+    border-radius: 50%;
+}
+.modal .student-image input {
+    display: none;
+    color: var(--color-dark);
+}
+
+.modal form {
+    width: calc(100% - 220px);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.modal form .modal-item {
+    width: 45%;
+    margin: 10px;
+}
+
+.modal form .modal-item p {
+    color: var(--color-dark);
+    margin: 0;
+}
+
+.modal form .modal-item input, select {
+    border: none;
+    background-color: var(--color-background);
+    outline: none;
+    height: 30px;
+    width: 90%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    color: var(--color-dark);
+}
+.modal form select {
+    cursor: pointer;
+}
+.modal form .modal-item div {
+    display: flex;
+    align-items: center;
+
+}
+
+.modal form .modal-item div i {
+    color: var(--color-dark);
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.modal .ponconfirm-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.modal .ponconfirm-buttons button {
+    border: none;
+    padding: 5px  10px;
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal .buttons {
+    position: absolute;
+    bottom: 20px;
+    right: 20px
+}
+
+.modal .buttons button {
+    margin-right: 10px; 
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    
+}
+.modal .payment {
+    width: 100%;
+}
+
+.modal .modal-payment input{
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+.modal .student-payments {
+    padding-bottom: 100px;
+}
+.modal .student-payments h3 {
+    margin-left: 50px;
+}
+.modal .student-payments .payment-item{
+    display:flex;
+    height: 30px;
+    margin-top: 5px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.modal .student-payments .payment-item .payment-month {
+    width: 80px;
+    font-weight: 600;
+}
+.modal .student-payments .payment-item .payment-year {
+    width: 80px;
+    font-weight: 600;
+}
+
+.modal .student-payments .payment-item .payment-amount {
+    width: 15%;
+    text-align: end;
+}
+
+.modal .student-payments .payment-item .payment-amount span {
+    color: var(--color-danger);
+    font-weight: 600;
+    font-size: 12px !important  ;
+}
+.modal .student-payments .payment-item .payment-status {
+    margin-left: 20px;
+}
+
+.status-success {
+    background-color: var(--color-success);
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    border-radius: 4px;
+    width: 100px;
+    font-size: 12px !important;
+
+}
+.status-danger {
+    background-color: var(--color-danger);
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    border-radius: 4px;
+    width: 100px;
+    font-size: 12px !important;
+
+}
+.status-wait {
+    background-color: var(--color-warning);
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    border-radius: 4px;
+    width: 100px;
+    font-size: 12px !important;
+
+}
+
+.modal .buttons .cancel {
+    background-color: var(--color-background);
+    color: var(--color-dark);
+}
+.modal .buttons .save {
+    background-color: var(--color-primary);
+    color: white;
+}
+.modal .buttons .delete {
+    background-color: var(--color-danger);
+    color: white;
+}
+
+.modal .buttons .payment {
+    background-color: var(--color-danger);
+    color: white;
+    width: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+        
+    .modal {
+        width: 90% !important;
+        margin: auto;
+    }
+
+    
+    .modal .student-image {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .modal .student-image label img {
+        width: 80px;
+        cursor: pointer;
+    }
+    
+    .modal .student-image img {
+        width: 80px;
+        height  : 80px;
+        border-radius: 50%;
+    }
+    .modal form {
+        width: calc(100% - 80px);
+        height: 200px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    
+    .modal form .modal-item {
+        width: 50%;
+        margin: 0;
+    }
+    .status-success {
+        width: 80px;
+        font-size: 10px !important;
+    
+    }
+    .status-danger {
+        width: 80px;
+        font-size: 10px !important;
+    }
+
+    .modal .student-payments .payment-item .payment-amount {
+        width: 100px;
+        text-align: end;
+    }
+    
+    .modal .student-payments .payment-item .payment-amount span {
+        color: var(--color-danger);
+        font-weight: 600;
+        font-size: 10px !important  ;
+    }
+    .modal .student-payments .payment-item .payment-date {
+        width: 100px;
+        font-weight: 600;
+    }
+    
+
+}

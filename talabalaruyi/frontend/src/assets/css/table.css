@@ -1,0 +1,49 @@
+
+
+.table {
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    background-color: var(--color-white);
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+}
+.table p {
+    margin: 0;
+}
+.table .buttons {
+    display: flex;
+    justify-content: end;
+    padding-bottom: 20px;
+}
+
+.table .buttons button {
+    border: none;
+    padding: 5px 15px;
+    border-radius: 4px;
+    background-color: var(--color-danger);
+    color: white;
+    outline: none;
+}
+
+.table .payment {
+    color: var(--color-dark);
+    font-weight: 600;
+}
+.table .name {
+    color: var(--color-success);
+    font-weight: 600;
+    margin: 0;
+}
+.table .payment span {
+    color: var(--color-danger);
+    font-size: 12px !important;
+}
+
+
+.table-student-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}

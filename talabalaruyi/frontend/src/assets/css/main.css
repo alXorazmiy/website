@@ -1,0 +1,121 @@
+@import './base.css';
+
+
+.conatiner{
+    max-width: 1240px;
+    margin: auto;
+}
+
+.loader-container{
+    position: fixed;
+    z-index: 10;   
+    width: 100% !important;
+    width: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-background); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-container {
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 100vh;
+    background-color: #1D2D5B;
+    box-shadow: var(--box-shadow);
+}
+
+.page-container {
+    margin-left: 180px;
+    right: 20px;
+    height: 100vh;
+    top: 0;
+}
+
+
+.info-container {
+    position: fixed;
+    z-index: 8;
+    right: 20px;
+    top: 20px;
+}
+.menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: none;
+}
+.menu i {
+    font-size: 20px !important;
+}
+  
+.fa-solid, .fa-regular, .fa-duotone, .fa-light{
+    font-family: fontawesome !important;
+}
+
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input, select{
+     font-family: "Montserrat";
+     border: none;
+     outline: none;
+     background-color: var(--color-background);
+     padding: 5px 10px;
+     color: var(--color-dark);
+}
+
+button {
+    font-family: "Montserrat" !important;
+    cursor: pointer;
+}
+
+.customize-table {
+    --easy-table-border: 0px solid white;
+    --easy-table-row-border: 1px solid var(--color-info-dark);
+    --easy-table-header-font-color: var(--color-dark);
+    --easy-table-header-background-color: var(--color-white);
+    --easy-table-body-even-row-background-color: var(--color-white);
+    --easy-table-body-row-font-color:var(--color-dark);
+    --easy-table-body-row-background-color:var(--color-white);
+    --easy-table-footer-background-color:var(--color-white);
+    --easy-table-footer-font-color: var(--color-dark);
+    --easy-table-body-row-hover-font-color: var(--color-dark);
+    --easy-table-body-row-hover-background-color: var(--color-background);
+    --easy-table-body-row-font-size: 10px !important;
+    --easy-table-body-row-font-weight: 500 !important;
+    --easy-table-header-font-size: 10px !important;
+    
+    transition: all 0.3s ease;
+  
+  }
+
+  
+
+
+@media only screen and (max-width: 600px){
+    .conatiner {
+        width: 100%;
+        overflow: hidden;
+    }
+    .sidebar-container {
+        left: -180px;
+        transition: all 0.3s ease;
+    }
+    .page-container {
+        margin-left: 10px;
+        right: 10px;
+    }
+    .menu {
+        display: block;
+    }
+}

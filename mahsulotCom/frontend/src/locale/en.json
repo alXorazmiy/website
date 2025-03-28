@@ -1,0 +1,51 @@
+{
+    "Home": "Home",
+    "Shops": "Shops",
+    "Products": "Products",
+    "users": "Users",
+    "signin": "Login",
+    "logout": "Logout",
+    "rememberme" : "Remember",
+    "filter": "Filter",
+    "createshop": "Create Shop",
+    "cancel" : "Cancel",
+    "create": "Create",
+
+
+    "image" : "Image",
+    "title" : "Title",
+    "id" : "Id",
+    "category": "Category",
+    "price": "Price",
+    "amount": "Amount",
+    "active": "Active",
+
+    "search" : "Search",
+
+
+    "no" : "No",
+    "yes": "Yes",
+    "update": "Update",
+    "filter2": "Filter",
+    "want_delete": "Do you want to delete?",
+    "createProduct": "Create Product",
+
+    "active_true": "Active",
+    "active_false" : "Not Active",
+    "all" : "All",
+
+
+    "light_mode": "Light",
+    "dark_mode": "Dark",
+
+    "name": "Title",
+    "description" : "Description",
+    
+    "username": "username",
+    "role": "role",
+    "createUser" : "User create",
+    "password": "Password",
+    "product_admin": "Admin",
+    "super_admin": "Super Admin"
+
+}

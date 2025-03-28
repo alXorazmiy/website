@@ -1,0 +1,42 @@
+@import './base.css';
+
+
+.profilemenu {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.profilemenu .profilemenu-items {
+    min-width: 220px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    user-select: none;
+}
+
+.profilemenu .profilemenu-items img {
+    height: 30px;
+    width: 30px;
+}
+
+.profilemenu .profilemenu-items i,p {
+    cursor: pointer;
+    color: var(--color-dark);
+}
+
+.profilemenu .profilemenu-items .profilemenu-body {
+    position: absolute;
+    background-color: var(--color-white);
+    min-height: 50px;
+    width: 220px;
+    top: 50px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+
+.profilemenu .profilemenu-items .profilemenu-body p{
+    margin-left: 10px;
+    margin-right: 10px;
+}

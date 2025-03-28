@@ -1,0 +1,52 @@
+{
+    "Home": "Главная",
+    "Shops": "Магазины",
+    "Products": "Продукты",
+    "users": "Пользователи",
+    "signin": "Вход",
+    "logout": "Выход",
+    "rememberme" : "Помнить",
+    "filter": "Фильтр",
+    "createshop": "Создать магазин",
+    "cancel" : "Отмена",
+    "create": "Создавать",
+
+
+    "image" : "Изображение",
+    "title" : "Имя",
+    "id" : "Ид",
+    "category": "Категория",
+    "price": "Цена",
+    "amount": "Количество",
+    "active": "Активный",
+
+    "search" : "Поиск",
+
+
+    "no" : "Нет",
+    "yes": "Да",
+    "update": "Изменить",
+    "filter2": "Фильтр",
+    "want_delete": "Вы хотите удалить?",
+    "createProduct": "Создать продукт",
+
+    "active_true": "Активный",
+    "active_false" : "Не активен",
+    "all" : "Все",
+
+
+    "light_mode": "Светый",
+    "dark_mode": "Темный",
+
+    
+    "name": "Имя",
+    "description" : "Описание",
+
+
+    "username": "логин",
+    "role": "роль",
+    "createUser" : "Создать пользователя",
+    "password": "Пароль",
+    "product_admin": "Admin",
+    "super_admin": "Super Admin"
+}

@@ -1,0 +1,295 @@
+@import './base.css';
+
+
+.container .box {
+    width: 1000px;
+    margin: auto;
+    padding-top: 30px !important;
+    user-select: none;
+}
+
+.container .box .buttons {
+    display: flex;
+    justify-content: end;
+    margin: 20px;
+}
+
+.container .box .buttons  i {
+    color: var(--color-white);
+    animation: loginButton 1s linear infinite;
+}
+
+
+
+
+
+
+.popconfirm-button{
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    padding: 3px 8px;
+}
+
+.container .box .buttons button {
+    border: none;
+    background-color: var(--color-primary);
+    color: white;
+    height: 30px;
+    width: 130px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+}
+
+
+.container .box .floors {
+    background-color: var(--color-white);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    height: 70px;
+}
+
+.container .box .floors  .floor-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+}
+.container .box .floors  .floor-info p {
+    font-weight: 600;
+}
+
+.container .box .floors .swipper {
+    width: 800px;
+    padding: 0 70px;
+}
+
+.container .box .swipper .swipper-slide {
+    width: 120px !important;
+    margin: 0 10px;
+
+}
+.container .box .floors .swipper-item {
+    height: 60px;
+    margin-right: 0px;
+    background-color: var(--color-background);
+    border-radius: 10px;
+    padding: 6px;
+    color: var(--color-dark);
+    cursor: pointer;
+}
+
+.container .box .floors .swipper-item .swipper-item-number{
+    font-weight: 700;
+    font-size: 12px !important;
+}
+
+.container .box .floors .swipper-item .swipper-item-info {
+    width: 100%;
+    display:  flex;
+    align-items: center;
+}
+.container .box .floors .swipper-item .swipper-item-info .fa-circle{
+    color: var(--color-success) !important;
+    font-size: 10px !important;
+
+    
+}
+.container .box .floors .swipper-item .swipper-item-info p {
+        font-size: 10px !important;
+        margin: 0;
+        margin-left: 5px;
+}
+
+.container .box .floors .swipper-item .swipper-item-info2 {
+    width: 100%;
+    display:  flex;
+    align-items: center;
+}
+
+.container .box .floors .swipper-item .swipper-item-info2 .fa-circle{
+    font-size: 10px !important;
+    color: var(--color-danger) !important;
+
+    
+}
+.container .box .floors .swipper-item .swipper-item-info2 p {
+        font-size: 10px !important;
+        margin: 0;
+        margin-left: 5px;
+}
+/* ##################################################################333 */
+/* ##################################################################333 */
+/* ##################################################################333 */
+/* ##################################################################333 */
+/* ##################################################################333 */
+/* ##################################################################333 */
+.container .box .rooms {
+    margin-top: 50px;
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    height: 300px;
+}
+
+.container .box .rooms .floorborder {
+    border: 1px solid var(--color-primary);
+    width: 800px;
+    margin: auto;
+    height: 80%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content:space-between ;
+}
+
+
+
+.container .box .rooms .floorborder .room {
+    border: 1px solid var(--color-primary);
+    height: 80px;
+    width: 120px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: auto auto;
+    position: relative;
+    column-gap: 50px;
+    row-gap: 30px;
+}
+
+.container .box .rooms .floorborder .room .computer {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+.container .box .rooms .floorborder .room .table {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.container .box .rooms .floorborder .room i {
+    font-size: 25px !important;
+    cursor: pointer;
+    color: var(--color-dark);
+    opacity: 0.7;
+}
+
+.container .box .rooms .floorborder .room .room-number {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%);
+    background-color: var(--color-success);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    color: white;
+    font-size: 10px !important;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+
+
+
+
+.floor-active {
+    background-color: var(--color-primary) !important;
+    color: white !important;
+}
+
+.room-busy {
+    color: var(--color-danger) !important;
+    opacity: 1 !important;
+}
+
+
+.n-base-selection-label {
+    background-color: var(--color-background) !important;
+    outline: none !important;
+    color: var(--color-dark) !important;
+}
+.n-base-select-menu n-select-menu {
+    background-color: var(--color-background) !important;
+    color: var(--color-dark) !important;
+}
+
+.swiper-button-prev {
+    background-color: var(--color-primary);
+    border-radius: 4px;
+}
+.swiper-button-prev::after {
+    font-size: 20px !important;
+    font-weight: 900 !important ;
+}
+.swiper-button-next {
+    background-color: var(--color-primary);
+    border-radius: 4px;
+}
+.swiper-button-next::after {
+    font-size: 20px !important;
+    font-weight: 900;
+}
+
+
+@keyframes loginButton {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .container .box {
+        width: 98%;
+        margin: auto;
+        margin-top: 50px;
+        box-sizing: border-box;
+        
+    }
+    
+    .container .box .rooms {
+        height: 300px;
+        width: 95% !important;
+        
+        margin-top: 50px;
+        overflow-x: scroll;
+
+    }
+
+    .container .box .rooms .floorborder {
+        width: 800px;
+        overflow-: scroll;
+    }
+    
+    .container .box .floors .swipper {
+        padding: 0 30px;
+        width: 95% !important;
+        box-sizing: border-box;
+    }
+    .container .box .floors {
+        width: 95% !important;
+        padding: 10px 0;
+    }
+
+
+  
+}
