@@ -75,7 +75,7 @@ const register = () =>{
         }
         axios.post("http://localhost:8001/api/register/", data,{ withCredentials: true})
             .then((value)=>{
-                if (value.status == 200){
+                if (value.status == 201){
                     buttonLoading.value = false
                     router.push("/")
                 }

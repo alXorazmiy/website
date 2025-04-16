@@ -4,13 +4,26 @@ from rest_framework.views import APIView
 
 from ..models import User
 from ..serializers import UserSerializers
+from ..service import createToken
 
 
 class RegisterAPIView(APIView):
     def post(self, request):
-        serializer = UserSerializers(data= request.data,partial = True)
+        email = request.data.get("email")
+        if User.objects.filter(email=email).exists():
+            return Response({"error": "Bu email allaqachon ro'yxatdan o'tgan"}, status=status.HTTP_400_BAD_REQUEST)
+        
+        
+        serializer = UserSerializers(data=request.data, partial=True)
         if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status= status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+            user = serializer.save()
+            token = createToken(user.id)
+            response = Response({
+                "message": "User created successfully",
+                "token": token,
+            }, status=status.HTTP_201_CREATED)
+        
+            response.set_cookie(key="TOKEN", value=token, httponly=True)
+            return response
     
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
