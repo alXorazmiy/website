@@ -11,6 +11,8 @@ class LoginAPIView(APIView):
     def post(self, request):
         email = request.data['email']
         password = request.data['password']
+        print(email)
+        print(password)
 
         user = User.objects.filter(email = email).first()
 

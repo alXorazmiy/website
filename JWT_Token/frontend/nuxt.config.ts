@@ -29,7 +29,22 @@ export default defineNuxtConfig(
           '@nuxt/fonts',
           '@nuxt/icon',
           '@nuxt/image',
-          '@nuxtjs/tailwindcss'
-        ]
+          '@nuxtjs/tailwindcss',
+          '@pinia/nuxt',
+          '@nuxtjs/i18n'
+        ],
+        i18n: {
+
+            defaultLocale: 'uz',  
+            locales: [
+                { code: 'en', file: 'en.json' },
+                { code: 'ru', file: 'ru.json' },
+                { code: 'uz', file: 'uz.json' },
+            ],
+            lazy: true,
+            langDir: '../app/i18n/locales', 
+         
+            strategy: 'no_prefix'
+          }
     }
 )

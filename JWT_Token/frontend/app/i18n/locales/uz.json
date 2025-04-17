@@ -1,0 +1,52 @@
+{
+    "English": "Ingliz tili",
+    "Russian": "Rus tili",
+    "Uzbek": "Uzbek tili",
+    "Home": "Bosh sahifa",
+    "Shops": "Do'konlar",
+    "Products": "Mahsulotlar",
+    "users": "Foydalanuvchilar",
+    "signin": "Kirish",
+    "logout": "Chiqish",
+    "rememberme" : "Eslab qolish",
+    "filter": "Filter",
+    "cancel" : "Bekor qilish",
+    "create": "Yaratish",
+
+
+    "image" : "Rasm",
+    "title" : "Nomi",
+    "id" : "Id",
+    "category": "Kategoriya",
+    "price": "Narxi",
+    "amount": "Soni",
+    "active": "Holati",
+
+    "search" : "Qidirish",
+
+
+    "no" : "Yo'q",
+    "yes": "Ha",
+    "update": "O'zgartirish",
+    "filter2": "Filterlash",
+    "want_delete": "O'chirishni xoxlaysizmi?",
+
+
+    "active_true": "Faol",
+    "active_false" : "Faol emas",
+    "all" : "Hammasi",
+
+
+    "light_mode": "Kunduz",
+    "dark_mode": "Kechkqurun",
+
+    "name": "Nomi",
+    "description" : "Tavsifi",
+
+    "username": "Login",
+    "role": "Lavozim",
+    "createUser" : "User yaratish",
+    "password": "Parol",
+    "product_admin": "Admin",
+    "super_admin": "Super Admin"
+}

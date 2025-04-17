@@ -12,7 +12,17 @@ module.exports = {
         "./assets/**/*.{js,ts,vue}" // Agar assets'dan ham foydalanilsa, qo‘shish
     ],
     theme: {
-        extend: {}
+        extend: {
+            colors: {
+                darkPrimary: '#1d2633',
+                darkSecondary: '#2c384a',
+                darkText : "white",
+                lightPrimary: "#ffffff",
+                lightSecondary: "#fefefe",
+                lightText: "#000000"
+            },
+        },
     },
+    darkMode: 'class',
     plugins: []
 }
