@@ -3,7 +3,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from ..models import User
-from ..serializers import UserSerializers
+from ..serializers import UsersSerializers
 from ..service import createToken
 
 
@@ -14,7 +14,7 @@ class RegisterAPIView(APIView):
             return Response({"error": "Bu email allaqachon ro'yxatdan o'tgan"}, status=status.HTTP_400_BAD_REQUEST)
         
         
-        serializer = UserSerializers(data=request.data, partial=True)
+        serializer = UsersSerializers(data=request.data, partial=True)
         if serializer.is_valid():
             user = serializer.save()
             token = createToken(user.id)

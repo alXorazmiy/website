@@ -1,52 +1,36 @@
 {
-    "English": "Ingliz tili",
-    "Russian": "Rus tili",
-    "Uzbek": "Uzbek tili",
+    "English": "Inglizcha",
+    "Russian": "Ruscha",
+    "Uzbek": "O'zbekcha",
     "Home": "Bosh sahifa",
-    "Shops": "Do'konlar",
-    "Products": "Mahsulotlar",
+
+    "settings": "Sozlamalar",
+    "about": "Haqida",
+    "codes": "Kodlar",
+
     "users": "Foydalanuvchilar",
     "signin": "Kirish",
     "logout": "Chiqish",
-    "rememberme" : "Eslab qolish",
-    "filter": "Filter",
-    "cancel" : "Bekor qilish",
+    "rememberme": "Eslab qolish",
+
+    "cancel": "Bekor qilish",
     "create": "Yaratish",
 
+    "image": "Rasm",
 
-    "image" : "Rasm",
-    "title" : "Nomi",
-    "id" : "Id",
-    "category": "Kategoriya",
-    "price": "Narxi",
-    "amount": "Soni",
-    "active": "Holati",
+    "search": "Qidirish",
 
-    "search" : "Qidirish",
-
-
-    "no" : "Yo'q",
+    "no": "Yo'q",
     "yes": "Ha",
-    "update": "O'zgartirish",
-    "filter2": "Filterlash",
-    "want_delete": "O'chirishni xoxlaysizmi?",
+    "update": "Yangilash",
 
+    "want_delete": "O'chirib tashlamoqchimisiz?",
 
-    "active_true": "Faol",
-    "active_false" : "Faol emas",
-    "all" : "Hammasi",
+    "all": "Hammasi",
 
+    "light_mode": "Yorug' rejim",
+    "dark_mode": "Qorong'u rejim",
 
-    "light_mode": "Kunduz",
-    "dark_mode": "Kechkqurun",
-
-    "name": "Nomi",
-    "description" : "Tavsifi",
-
-    "username": "Login",
-    "role": "Lavozim",
-    "createUser" : "User yaratish",
     "password": "Parol",
-    "product_admin": "Admin",
-    "super_admin": "Super Admin"
+    "product_admin": "Admin"
 }

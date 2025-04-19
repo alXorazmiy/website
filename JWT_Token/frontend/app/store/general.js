@@ -1,15 +1,22 @@
 
-    import { defineStore } from "pinia";
+import { defineStore } from "pinia";
 
-    export const useGeneralStore = defineStore("general", {
-        state: ()=>({
-            isLogin : false,
-            count: 0
-        }),
-        actions: {
-            increment(){
-                this.count--
-            }
+export const useGeneralStore = defineStore("general", {
+    state: ()=>({
+        isLogin : false,
+        isLoader: false,
+        isDark : true,
+        count: 0
+    }),
+    actions: {
+        increment(){
+            this.count--
         },
-        persist: true
-    })
+        toggleTheme() {
+            this.isDark = !this.isDark;
+        }
+    },
+    persist: {
+        paths: ['isLogin', 'isDark']
+    }
+})

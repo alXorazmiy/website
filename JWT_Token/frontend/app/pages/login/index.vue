@@ -1,17 +1,17 @@
 <template>
-    <div class = "w-full h-[100vh] top-0 left-0 bg-[#1d2633]" >
+    <div class = "w-full h-[100vh] top-0 left-0 dark:bg-darkPrimary bg-lightPrimary" >
         <div class="flex justify-center items-center h-full">
             <div class="w-[400px] h-[450px] rounded ">
                 <form @submit.prevent = "login" class="h-full w-full p-3 flex justify-around flex-col items-center relative ">
-                    <span class = "text-white font-bold text-[24px]" >Log in</span>
-                    <div class = "w-[80%] mx-auto" >
-                        <div class="bg-[#2c384a] mb-3 p-3 flex items-center rounded">
-                            <Icon name = "material-symbols:mail-rounded" size = "20" class="text-white" />
-                            <input v-model="email" type="email" placeholder="Email" class=" bg-transparent outline-none ml-2 text-white">
+                    <span class = "dark:text-white text-black font-bold text-[24px]" >Log in</span>
+                    <div class = "w-[80%] mx-auto dark:text-white text-black" >
+                        <div class="dark:bg-darkSecondary bg-lightSecondary mb-3 p-3 flex items-center rounded">
+                            <Icon name = "material-symbols:mail-rounded" size = "20"  />
+                            <input v-model="email" type="email" placeholder="Email" class=" bg-transparent outline-none ml-2 ">
                         </div>
-                        <div class="bg-[#2c384a] mb-3 p-3 flex items-center rounded">
-                            <Icon name = "material-symbols:lock" size = "20" class="text-white" />
-                            <input v-model="password" type="password" placeholder="Password" class=" bg-transparent outline-none ml-2 text-white">
+                        <div class="dark:bg-darkSecondary bg-lightSecondary mb-3 p-3 flex items-center rounded">
+                            <Icon name = "material-symbols:lock" size = "20"  />
+                            <input v-model="password" type="password" placeholder="Password" class=" bg-transparent outline-none ml-2 ">
                         </div>
                         <div class="my-8 text-gray-400" >
                             <input v-model="remember"  type="checkbox" class="mr-3 cursor-pointer">
@@ -25,7 +25,7 @@
                         <hr class="border border-gray-500 mb-8">
                        
                         <NuxtLink to="/signup">
-                            <div class="text-white border py-2 flex items-center justify-center ">
+                            <div class="border dark:border-white border-black py-2 flex items-center justify-center " >
                                 Sign up
                             </div>
                         </NuxtLink>
@@ -42,10 +42,7 @@
 <script setup>
 
 const {$axios} = useNuxtApp()
-import {useRouter} from 'vue-router'
-
 const router = useRouter()
-
 const buttonLoading = ref(false)
 const email = ref('b@gmail.com')
 const password = ref('b123456')
@@ -64,6 +61,7 @@ const login = () =>{
             .then((value)=>{
                 if (value.status == 200){
                     buttonLoading.value = false
+                    
                     router.push("/")
                 }
             })

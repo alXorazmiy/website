@@ -45,6 +45,7 @@ export default defineNuxtConfig(
             langDir: '../app/i18n/locales', 
          
             strategy: 'no_prefix'
-          }
+        },
+        plugins: ['~/plugins/piniaPersist.client.js'],
     }
 )

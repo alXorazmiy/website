@@ -3,51 +3,34 @@
     "Russian": "Русский",
     "Uzbek": "Узбекский",
     "Home": "Главная",
-    "Shops": "Магазины",
-    "Products": "Продукты",
+
+    "settings": "Настройки",
+    "about": "О нас",
+    "codes": "Коды",
+
     "users": "Пользователи",
-    "signin": "Вход",
-    "logout": "Выход",
-    "rememberme" : "Помнить",
-    "filter": "Фильтр",
-    "cancel" : "Отмена",
-    "create": "Создавать",
+    "signin": "Войти",
+    "logout": "Выйти",
+    "rememberme": "Запомнить",
 
+    "cancel": "Отмена",
+    "create": "Создать",
 
-    "image" : "Изображение",
-    "title" : "Имя",
-    "id" : "Ид",
-    "category": "Категория",
-    "price": "Цена",
-    "amount": "Количество",
-    "active": "Активный",
+    "image": "Изображение",
 
-    "search" : "Поиск",
+    "search": "Поиск",
 
-
-    "no" : "Нет",
+    "no": "Нет",
     "yes": "Да",
-    "update": "Изменить",
-    "filter2": "Фильтр",
+    "update": "Обновить",
+
     "want_delete": "Вы хотите удалить?",
 
-    "active_true": "Активный",
-    "active_false" : "Не активен",
-    "all" : "Все",
+    "all": "Все",
 
+    "light_mode": "Светлый режим",
+    "dark_mode": "Темный режим",
 
-    "light_mode": "Светый",
-    "dark_mode": "Темный",
-
-    
-    "name": "Имя",
-    "description" : "Описание",
-
-
-    "username": "логин",
-    "role": "роль",
-    "createUser" : "Создать пользователя",
     "password": "Пароль",
-    "product_admin": "Admin",
-    "super_admin": "Super Admin"
+    "product_admin": "Администратор"
 }

@@ -1,5 +1,5 @@
 <template>
-    <span class="loader"></span>
+    <span class="loader dark:text-white text-gray"></span>
 </template>
 
 <script setup>
@@ -15,7 +15,6 @@
     animation: bblFadInOut 1.8s infinite ease-in-out;
 }
 .loader {
-    color: #FFF;
     font-size: 7px;
     position: relative;
     text-indent: -9999em;

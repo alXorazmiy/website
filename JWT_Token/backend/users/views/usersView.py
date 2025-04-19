@@ -3,7 +3,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.exceptions import AuthenticationFailed
 
-from ..serializers import UserSerializers
+from ..serializers import UsersSerializers,UserDetailSerializer
 from ..models import *
 from ..service import *
 
@@ -16,7 +16,7 @@ class UserAPIView(APIView):
         
         user_id = decodeToken(token=token)
         user = User.objects.filter(id = user_id).first()
-        serializer = UserSerializers(user)
+        serializer = UserDetailSerializer(user)
         return Response(serializer.data)
     
 
@@ -30,7 +30,7 @@ class UsersListAPIView(APIView):
         if not user.is_staff:
             raise AuthenticationFailed("Xatolik!")
         users = User.objects.all()
-        serializer = UserSerializers(users, many = True)    
+        serializer = UsersSerializers(users, many = True)    
         return Response(serializer.data)
 
 
@@ -45,7 +45,7 @@ class UserDetailAPIView(APIView):
         except User.DoesNotExist:
             return Response({"detail": "Foydalanuvchi topilmadi!"}, status=status.HTTP_404_NOT_FOUND)
         
-        serializer = UserSerializers(user)
+        serializer = UsersSerializers(user)
         return Response(serializer.data)
     
     def put(self, request, pk):
@@ -55,7 +55,7 @@ class UserDetailAPIView(APIView):
         except User.DoesNotExist:
             return Response({"detail": "Foydalanuvchi topilmadi!"}, status=status.HTTP_404_NOT_FOUND)
         
-        serializer = UserSerializers(user, data = request.data, partial = True)
+        serializer = UsersSerializers(user, data = request.data, partial = True)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data)
